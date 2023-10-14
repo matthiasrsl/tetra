@@ -50,7 +50,7 @@ def resolve_component(context, name):
         try:
             return libraries[name_parts[0]][name_parts[1]].components[name_parts[2]]
         except KeyError:
-            ComponentNotFound(f'Component "{name}" not found.')
+            ComponentNotFound(f'Component2 "{name}" not found.')
 
     if len(name_parts) > 3:
         raise ComponentNotFound(
@@ -104,4 +104,4 @@ def resolve_component(context, name):
         except KeyError:
             pass
 
-    raise ComponentNotFound(f'Component "{name}" not found.')
+    raise ComponentNotFound(f'Component1 "{name}" not found.')
